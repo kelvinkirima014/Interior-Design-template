@@ -366,6 +366,7 @@ html{
    
 }
 .team{
+    height: 155vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -463,5 +464,146 @@ img{
     border: none;
     box-shadow: 0 0.1rem .8rem
     rgba(0, 0, 0, 0.5);
+
+}
+.contact{
+    width: 100%;
+    height: 150vh;
+    background-color: #262626;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.contact-wrapper {
+    width: 60%;
+    height: 50rem;
+    display: flex;
+    box-shadow: 0 3rem 7rem rgba
+    (0,0,0,0.5);
+}
+
+/* test when i get internet connection*/
+.contact-left{
+    width: 35%;
+    background: linear-gradient(rgba(15,15,15,0.6)
+    rgba(22,22,22,0.9)),
+    url(/images/contact1.jpg)
+    center no-repeat;
+    background-size: cover;
+}
+.contact-right{
+    width:65%;
+    background-color: #eee;
+    padding: 3rem 10rem 10rem 10rem;
+}
+.contact-header{
+    font-family: 'Baloo Da 2',serif;
+    font-size: 4rem;
+    font-weight: 300;
+    color: #272727;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.contact-right form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-group{
+    position: relative;
+}
+.field{
+    width: 45rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: .2rem dashed #636363;
+    margin: 3rem 0;
+    padding: .5rem .5rem .5rem 0;
+    font-family: 'Mulish', serif;
+    font-size: 1.6rem;
+    color: #4b4b4b;
+}
+.input-group input{
+    height: 4rem;
+}
+/*to prevent overflow of text-area*/
+.input-group textarea{
+    max-height: 7rem;
+    max-width: 45rem;
+}
+/* make the line solid on focus*/
+.field:focus{
+    border-bottom-style: solid;
+}
+.input-group label{
+    position: absolute;/*made .input-group relative*/
+    left: 0;
+    font-family: 'Baloo Da 2', serif;
+    font-size: 1.6rem;
+    color: #4b4b4b;
+    pointer-events: none;
+    transition: all .3s;
+    
+}
+.input-label{
+    bottom: 4rem;
+}
+.message{
+    bottom: 8rem;
+}
+/* select label using css combinator
+the general-sibling selector ~ */
+.field:focus~label{
+    transform: translateY(-3rem);
+    font-size: 1.4rem;
+
+}
+.submit-btn{
+    width: 30rem;
+    height: 4rem;
+    background-color: #c29525;
+    border: none;
+    margin-top: 1.5rem;
+    color: #fff;
+    font-family: 'Mulish', serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.16rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    text-shadow: 0 0.1rem 0.3rem
+    rgba(0,0,0,0.5);
+    box-shadow: 0 0.1rem 0.3rem
+    rgba(0,0,0,0.3);
+}
+.submit-btn:hover {
+    opacity: .8;
+}
+.footer{
+    width: 100%;
+    height: 15rem;
+    background-color: #17181b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.copyright{
+    color: #a7a7a7;
+    font-family: 'Baloo Da 2', serif;
+    font-size: 1.6rem;
+}
+.social-list a{
+    margin: 0 2rem;
+}
+.social-list i{
+    font-size: 2rem;
+    color: #a7a7a7;
 
 }
