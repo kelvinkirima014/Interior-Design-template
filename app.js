@@ -6,6 +6,14 @@ document.querySelector('.hamburger-menu')
     ('change');
 
 });
+// clicks home button
+document.querySelector('#btn').
+addEventListener('click',()=>{
+    document.querySelector('#contact').
+   style.scrollBehavior = 'smooth'
+})
+
+
 
 // the scroll button
 document.querySelector('.scroll-btn')
