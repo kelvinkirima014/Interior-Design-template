@@ -272,6 +272,7 @@ html{
 .social-media i:hover{
     background-color: #c29525;
 }
+
 .about-us{
    background-color: #f5f5f5;
    height: 150vh;
@@ -369,8 +370,88 @@ html{
 .about-img-wrapper img{
     width: 100%;
     object-fit: cover;
-    opacity: 0.7;
+    opacity: 0.9;
    
+}
+.testimonials-wave{
+    margin-top: 5rem;
+}
+.testimonials-container{
+    max-width: 110rem;
+    margin: 0 auto;
+    padding: 0 3rem;
+    height: 150vh;
+}
+.testimonials-container h1{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-family: "Mulish", serif;
+    font-size: 5rem;
+    font-weight: 300;
+    color: #4b4b4b;
+    margin-bottom: 5rem;
+}
+.testimonials-underline{
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+    width:18rem;
+    height: .2rem;
+    background-color: #c29525;
+}
+.testimonials-box-item{
+    position: relative;
+    z-index: 1;
+    max-width: 80rem;
+    min-height: 38rem;
+    margin: 20rem auto 0 auto;
+}
+.testimonials-box-item::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #c29525;
+    opacity: 0.5;
+    z-index: -1;
+    border-radius: 1rem;
+}
+.testimonials-photo{
+    position: absolute;
+    top: -7rem;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.testimonials-photo img {
+    
+    height: 18rem;
+    border-radius: 50%;
+    padding: .3rem;
+
+}
+.testimonials-box-item h3{
+    font-family: 'Baloo Da 2', serif;
+    font-size: 2.6rem;
+    line-height:3rem;
+    font-weight: 300;
+    padding-top: 14rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+
+}
+.testimonials-box-item p{
+    font-family: 'Josefin slab', serif;
+    font-size: 1.5rem;
+    text-align: justify;
+    width: 80%;
+    margin: auto;
+    line-height: 3rem;
+    padding-bottom: 3rem;
+
+
 }
 .team{
     height: 155vh;
@@ -610,8 +691,10 @@ the general-sibling selector ~ */
 .social-list i{
     font-size: 2rem;
     color: #a7a7a7;
+    
 
 }
+
 .scroll-btn{
     position: fixed;
     right: 5rem;

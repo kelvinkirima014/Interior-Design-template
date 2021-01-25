@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" 
     integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" 
     crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,100;0,500;0,600;1,100;1,200&family=Mulish:ital,wght@0,200;0,500;0,700;1,200;1,500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -25,15 +27,15 @@
           
             <div class="banner">
                 <h1>We Bring Beauty To Your Space</h1>
-                <p>Lorem 
-               psum dolor lorem amet hod tec mik it don sit amet, debitis est.
+                <p>Worem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, perferendis! e 
                 </p>
                 <button id="btn">Discover Now</button>
+
              
                 
             </div>
             
-                <img class = "header-img" src="images/stencil.webp" alt="">
+                <img class = "header-img" src="images/stencil2.webp" alt="">
                 <svg class = "wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                     <path fill="#273036" fill-opacity="1" 
                     d="M0,192L48,208C96,224,192,256,288,
@@ -52,6 +54,10 @@
 
                 <li class="menu-items">
                     <a href="#about-us" class="menu-link" data-content="About Us">About Us</a>
+                </li>
+
+                <li class="menu-items">
+                    <a href="#testimonials" class="menu-link" data-content="Testimonials">Testimonials</a>
                 </li>
 
                 <li class="menu-items">
@@ -191,10 +197,65 @@
 
             </div>
             <div class="about-img-wrapper">
-                <img src="images/about.jpg" alt="about background">
+                <img src="images/interior.jpg" alt="about background">
             </div>
 
            </div>
+          
+       </section>
+
+       <section id="testimonials" class="testimonials">
+        <svg class="testimonials-wave" xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 1440 320"><path fill="#273036" 
+         fill-opacity="1" d="M0,224L48,213.3C96,203,192,
+         181,288,170.7C384,160,480,160,576,176C672,192,768,
+         224,864,245.3C960,267,1056,277,1152,245.3C1248,213,
+         1344,139,1392,101.3L1440,64L1440,0L1392,0C1344,0,
+         1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480
+        ,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        <div class="testimonials-container">
+            <h1>What Our Clients Say</h1>
+            <div class="testimonials-underline"></div>
+            <div class="owl-carousel owl-theme">
+                <div class="testimonials-box-item">
+                    <div class="testimonials-photo">
+                        <img src="/images/testimonial1.jpg" alt="client image">
+                    </div>
+                    <h3>Tyler Hero</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                         Repellendus, praesentium doloremque nesciunt unde possimus 
+                         voluptate fugiat ab eaque corporis porro delectus? Rem corporis 
+                         quae architecto? Optio illo necessitatibus similique perferendis 
+                        molestiae cupiditate quaerat. Fugiat, nihil!</p>
+                
+                </div>
+                <div class="testimonials-box-item">
+                    <div class="testimonials-photo">
+                        <img src="/images/testimonial2.jpg" alt="client image">
+                    </div>
+                    <h3>Mark Kin</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                         Repellendus, praesentium doloremque nesciunt unde possimus 
+                         voluptate fugiat ab eaque corporis porro delectus? Rem corporis 
+                         quae architecto? Optio illo necessitatibus similique perferendis 
+                        molestiae cupiditate quaerat. Fugiat, nihil!</p>
+                
+                </div>
+                <div class="testimonials-box-item">
+                    <div class="testimonials-photo">
+                        <img src="/images/testimonial3.jpg" alt="client image">
+                    </div>
+                    <h3>Jeniffer</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                         Repellendus, praesentium doloremque nesciunt unde possimus 
+                         voluptate fugiat ab eaque corporis porro delectus? Rem corporis 
+                         quae architecto? Optio illo necessitatibus similique perferendis 
+                        molestiae cupiditate quaerat. Fugiat, nihil!</p>
+                
+                </div>
+            </div>
+        </div>
+               
        </section>
 
        <section  id = "team" class="team">
@@ -299,5 +360,20 @@
     integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
     crossorigin="anonymous"></script>
     <script src="tilt.js"></script>
+    <script src="./OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+    <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <script>
+        //testimonial carousel
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive:{
+                0:{
+                    items: 1
+                }
+            }
+        })
+    </script>
 </body>
 </html>
