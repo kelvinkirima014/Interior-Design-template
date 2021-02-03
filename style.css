@@ -137,7 +137,7 @@ html{
 }
 .banner{
     position: absolute;
-    top: 18%;
+    top: 12%;
     left: 14%;
 
 }
@@ -159,7 +159,7 @@ html{
     color: #4b4848;
     width:70%;
     letter-spacing: 0.1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     text-shadow: .3rem .5rem rgba
     (0,0,0,0.4);
     
