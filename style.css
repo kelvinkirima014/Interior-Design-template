@@ -111,7 +111,7 @@ html{
     background-blend-mode: screen;*/
      
 }
-.header-img {
+/*.header-img {
     position: absolute;
     top: 7.5rem;
     right: 5rem;
@@ -119,7 +119,7 @@ html{
     border-radius:.2rem;
     object-fit: cover;
     animation:easeBanner 7s .7s forwards;
-}
+}*/
 
 .wave{
     position: absolute;
@@ -200,6 +200,27 @@ html{
         rotateY(0);
         opacity: 1;
     }
+}
+.home-right{
+    display: flex;
+    align-items: center;
+    position:absolute;
+    right: 5rem;
+    
+}
+.home-right h4{
+    position:relative;
+    font-family: "Mulish", serif;
+    font-size: 3rem;
+    font-weight: 300;
+    color: #252525;
+
+}
+.home-right i{
+    position: relative;
+    margin: 2rem;
+    font-size: 3.5rem;
+   
 }
 .sidebar{
     width: 35rem;
