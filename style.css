@@ -316,14 +316,14 @@ html{
     flex-direction:column;
     align-items: center;
     padding: 7rem 0 10rem 0;
-    margin: 0;
+
 }
 .section-heading {
     font-family: "Mulish", serif;
     font-size: 5rem;
     font-weight: 300;
     color: #4b4b4b;
-    margin-bottom: 3rem;
+    margin: 2rem 0 3rem 0;
 }
 .underline {
     width:12rem;
@@ -406,10 +406,10 @@ html{
 }
 
 .testimonials-container{
-    max-width: 110rem;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 3rem;
-    height: 110vh;
+    height: 100%;
 }
 .testimonials-container h1{
     display: flex;
@@ -756,11 +756,167 @@ the general-sibling selector ~ */
     .banner button{
         width: 200px;
     }
-  
     .section-header{
         padding: 2rem 0 4rem 0;
     }
+  
+ 
 }
-@media(max-width:768px){
+@media(max-width:1200px){
+    .banner h1{
+        font-size: 4rem;
+        line-height: 4rem
+    }
+    banner p{
+        font-size:  1.5rem;
+    }
+  
+    .service-header h3{
+        font-size: 2.1rem;
+        line-height: 2.3rem;
+    }
+    .service-text{
+        font-size: 1.3rem;
+    }
+    .section-heading{
+        margin-bottom: 2rem;
+    }
+    .team{
+        height: 100%;
+        padding-bottom: 5rem;
+    }
+    .cards-wrapper{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4rem;
+    }
+    .card{
+        margin-bottom: 4rem;
+    }
+    .contact-wrapper{
+        width:90%;
+        height:60rem;
+    }
     
+}
+@media(max-width:1000px){
+    .header-img{
+        width: 30rem;
+        right: 9rem;
+        top: 10rem;
+    }
+    .banner{
+        top: 18%;
+    }
+    .banner h1{
+        font-size: 4rem;
+        line-height: 4rem;
+
+    }
+    .banner p{
+        font-size: 1.6rem;
+    }
+    .about-us{
+        height: 100%;
+    }
+    .services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .service{
+        width: 40rem;
+        margin-bottom: 5rem;
+    }
+    .about-img-wrapper{
+        width: 70rem;
+    }
+    .about-img-wrapper img{
+        width: 100%;
+    }
+
+
+}
+@media(max-width:800px){
+    .banner{
+        top: 20%;
+    }
+    .banner h1{
+        font-size: 3.5rem;
+        font-weight: 400;
+        line-height: 4rem;    
+    }
+    .header-img{
+        width: 25rem;
+        top: 20%;
+        right: 5rem;
+    }
+    .about-img-wrapper{
+        width: 75%;
+    }
+    .contact-left{
+        width: 0;
+    }
+
+    .contact-right{
+        width: 100%;
+    }
+    .footer-content{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 50%
+    }
+    .copyright{
+        order:1;
+        margin-top: 2rem;
+    }
+}
+@media(max-width:600px){
+    .header-img{
+        width: 20rem;
+        top: 25%
+    }
+    .banner{
+        top: 25%;
+    }
+    .banner h1{
+        font-size: 3.5rem;
+    }
+    .banner p{
+        font-size: 1.4rem;
+    }
+   .testimonials-container h1{
+       font-size: 4rem;
+   }
+}
+@media(max-width:540px){
+    .header-img{
+        width: 17rem;
+    }
+    .banner p{
+        font-size: 1.2rem;
+    }
+    .field{
+        width: 35rem;
+    }
+}
+@media(max-width:500px){
+    html{
+        font-size: 60%;
+    }
+    .service{
+        width: 20rem;
+    }
+   
+}
+@media(max-width:460px){
+    .sidebar{
+        width: 100%;
+        right: -100%;
+    }
+    .change .hamburger-menu{
+        right: 40rem;
+    }
+
 }
